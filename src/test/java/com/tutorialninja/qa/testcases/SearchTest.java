@@ -12,6 +12,8 @@ import com.tutorialsninja.qa.pages.HomePage;
 import com.tutorialsninja.qa.pages.SearchPage;
 
 //Updated comment
+
+//Update second comment added more deatils.
 public class SearchTest extends Base {
 	
 	public WebDriver driver;
