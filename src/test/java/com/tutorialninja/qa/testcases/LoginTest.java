@@ -22,7 +22,7 @@ public class LoginTest extends Base {
 		super();
 	}
 	@BeforeMethod
-	public void seUp() {
+	public void setUp() {
 		driver = initializeBrowserAndOpenApplication(prop.getProperty("browserName"));
 		//driver =initializeBrowserAndOpenApplication("chrome");
 		HomePage homePage = new HomePage(driver);
@@ -45,7 +45,6 @@ public class LoginTest extends Base {
 		
 		AccountPage accountPage = loginPage.login(email, password);
 		Assert.assertTrue(accountPage.getDisplayStatusOfEditYourAccountInformationOption(),"Edt your information is not displayed");
-		
 	}
 	@Test(priority = 2)
 	public void verifyLoginWithInvalidCredentials() {	
@@ -77,12 +76,10 @@ public class LoginTest extends Base {
 	}
 	@Test(priority = 5)
 	public void verifyLoginWithEmptyEmailAndEmptyPassword() {
-		
 		loginPage.clickOnLoginButton();
 		String actualWarningMEssage = loginPage.retriveEmailPasswordWarningMessageText();
 		String expectedWarningMessage = dataProp.getProperty("expectedWarningMessage");
 		Assert.assertTrue(actualWarningMEssage.contains(expectedWarningMessage), "actualessage is not equal to expected warning message");		
 	}
-	
-
 }
+
