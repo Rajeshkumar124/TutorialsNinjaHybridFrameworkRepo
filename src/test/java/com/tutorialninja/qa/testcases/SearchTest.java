@@ -1,6 +1,5 @@
 package com.tutorialninja.qa.testcases;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -14,6 +13,8 @@ import com.tutorialsninja.qa.pages.SearchPage;
 //First git update
 
 //Update second comment added more deatils.
+
+//eclipse update 
 public class SearchTest extends Base {
 	
 	public WebDriver driver;
