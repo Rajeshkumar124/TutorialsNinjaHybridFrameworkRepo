@@ -11,7 +11,7 @@ import com.tutorialsninja.qa.base.Base;
 import com.tutorialsninja.qa.pages.HomePage;
 import com.tutorialsninja.qa.pages.SearchPage;
 
-//Updated comment
+//First git update
 
 //Update second comment added more deatils.
 public class SearchTest extends Base {
